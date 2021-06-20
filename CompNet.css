@@ -1,0 +1,367 @@
+@font-face {
+  font-family: myfont;
+  src: url("My Data/OpenSans-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #161b22;
+}
+
+/* untuk menghilangkan  right topbar navigation when the screen less than 820ox */
+
+@media screen and (max-width: 820px) {
+  #topbar-right {
+    display: none;
+  }
+}
+
+/* untuk membuat margin-top pada box when the screen less than 1230px */
+
+@media screen and (max-width: 1280px) {
+  #container-box .box {
+    margin-top: 60px;
+  }
+}
+
+
+/* untuk membuat features box tidak bertabrakan dengan box di atasnya */
+
+@media screen and (max-width: 1480px) {
+  #features,
+  #features-box {
+    
+  }
+}
+
+
+@media screen and (max-width: 1220px) {
+  #features,
+  #features-box {
+    margin-top: 650px;
+  }
+
+  #features-box .box {
+    margin-bottom: 60px;
+  }
+}
+/* 
+@media screen and (max-width: 100px) {
+  #features,
+  #features-box {
+    margin-top: 650px;
+  }
+
+  #features-box .box {
+    margin-bottom: 60px;
+  }
+} */
+
+@media screen and (max-width: 1000px) {
+  #features,
+  #features-box {
+    margin-top: 1250px;
+  }
+
+  #features-box .box {
+    margin-bottom: 60px;
+  }
+}
+/* 
+@media screen and (max-width: 1100px) {
+  #features,
+  #features-box {
+    margin-top: 00px;
+  }
+
+  #features-box .box {
+    margin-top: 0;
+    margin-bottom: 60px;
+
+  }
+} */
+
+
+/* untuk menghilangkan gambar monitor ketika layar kurang dari 1150px */
+
+@media screen and (max-width: 1150px) {
+  #monitor {
+    display: none;
+  }
+}
+
+/* for smooth scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* font for all */
+
+#topbar-left,
+#topbar-right span,
+#signup-btn {
+  font-weight: 800;
+  color: white;
+  font-family: myfont;
+}
+
+#main-content p,
+#bottom h2,
+#bottom p,
+.box {
+  color: white;
+  font-family: myfont;
+}
+
+/* topbar */
+
+#topbar {
+  position: relative;
+  background-color: #13465e;
+  height: 70px;
+  width: 100%;
+}
+
+#topbar-left {
+  font-size: x-large;
+  position: absolute;
+  left: 180px;
+  top: 20px;
+}
+
+#topbar-right {
+  position: absolute;
+  right: 170px;
+  top: 23px;
+}
+
+#topbar-right span {
+  cursor: pointer;
+  float: left;
+  border: 3px solid transparent;
+  padding-right: 20px;
+}
+
+#topbar-right span:hover {
+  color: #0062cc;
+  /* border-bottom-color: red; */
+}
+
+#signup-btn {
+  position: absolute;
+  right: 50px;
+  top: 17px;
+  font-family: myfont;
+  border: 2px solid #0062cc;
+  color: #ffffff;
+  background-color: #113444;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  outline: none;
+}
+
+#signup-btn:hover {
+  cursor: pointer;
+  background-color: #161b22;
+}
+
+/* main content */
+
+#main-content {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
+#main-content p #header {
+  position: relative;
+  top: -12px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#main-content p {
+  position: absolute;
+  top: 139px;
+  left: 180px;
+  width: 400px;
+  display: inline-block;
+}
+
+#main-content img {
+  float: right;
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  width: 300px;
+}
+
+/* bottom */
+
+#bottom {
+  background-color: #13465e;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 567px;
+}
+
+#bottom h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+#bottom p {
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+/* box */
+
+#container-box {
+  position: absolute;
+  width: 100%;
+  top: 750px;
+}
+
+#container-box .box {
+  display: flex;
+  position: relative;
+  float: left;
+  left: 50px;
+  margin-left: 35px;
+  height: 519px;
+  width: 370px;
+  background-color: #13465e;
+}
+
+/* untuk mengatur posisi gambar */
+
+#container-box .box-1 img {
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  height: 170px;
+}
+
+#container-box .box-2 img {
+  position: absolute;
+  top: 8%;
+  left: 26%;
+  height: 170px;
+}
+
+#container-box .box-3 img {
+  position: absolute;
+  top: 10%;
+  left: 27%;
+  height: 170px;
+}
+
+/* untuk mengatur judul */
+
+#container-box .box-1 .header,
+#container-box .box-3 .header {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  font-weight: 600;
+}
+
+#container-box .box-2 .header {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-weight: 600;
+}
+
+#container-box .box p {
+  position: absolute;
+  left: 17%;
+  top: 58%;
+  width: 235px;
+  text-align: justify;
+}
+
+/* features article  */
+
+#features {
+  position: absolute;
+  top: 1350px;
+  left: 145px;
+  width: 200px;
+  height: 200px;
+}
+
+#features-article #header {
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  font-size: 1.7em;
+  font-family: myfont;
+}
+
+#features-article #article {
+  position: absolute;
+  color: white;
+  top: 47px;
+  width: 185px;
+}
+
+/* features box */
+
+#features-box {
+  position: absolute;
+  top: 210px;
+}
+
+#features-box .box {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  padding: 10px 20px;
+  top: 1300px;
+  left: 45px;
+  float: left;
+  margin-left: 50px;
+  background-color: #13465e;
+}
+
+#features-box .box span {
+  position: absolute;
+  top: 25%;
+  text-align: justify;
+  width: 300px;
+}
+
+
+/* social media */
+
+
+#social-media {
+  position: absolute;
+  top: 1920px;
+  left: 110px;
+}
+
+
+#footer {
+  height: 90px;
+  width: 1349px;
+  margin: 0 100;
+  background-color: #13465E;
+  position: absolute;
+  top: 2070px;
+}
+
+#footer p {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  color: white;
+}
