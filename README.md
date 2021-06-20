@@ -1,4 +1,4 @@
 # my-first-website
 
-there are still many shortcomings <br>
-still need a lot of improvement
+There are still many shortcomings <br>
+Still need a lot of improvement
